@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>伊犁五日自驾攻略 | 2026年7月19日-23日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2319765a'/%3E%3Cpath d='M10 42 25 24l10 12 8-10 11 16H10Z' fill='white'/%3E%3Ccircle cx='45' cy='18' r='6' fill='%23ffd166'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18212b;
+      --muted: #657383;
+      --line: #d8e1ea;
+      --paper: #ffffff;
+      --bg: #f4f7f8;
+      --green: #19765a;
+      --blue: #1f638f;
+      --orange: #b96021;
+      --red: #b23a2e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      letter-spacing: 0;
+    }
+    a { color: var(--blue); }
+    .hero {
+      min-height: 76vh;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(180deg, rgba(15, 35, 45, .18), rgba(15, 35, 45, .76)),
+        url("assets/sayram-lake.jpg") center / cover no-repeat;
+      color: #fff;
+      padding: 28px;
+    }
+    .hero-inner { width: min(1120px, 100%); margin: 0 auto; padding-bottom: 28px; }
+    .eyebrow { font-size: 15px; opacity: .92; margin: 0 0 10px; }
+    h1 {
+      font-size: clamp(34px, 7vw, 72px);
+      line-height: 1.05;
+      margin: 0 0 16px;
+      max-width: 920px;
+      letter-spacing: 0;
+    }
+    .hero p { max-width: 780px; font-size: 18px; margin: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .chip {
+      border: 1px solid rgba(255,255,255,.42);
+      background: rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 14px;
+      backdrop-filter: blur(8px);
+    }
+    main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    section { padding: 44px 0; }
+    h2 { font-size: 28px; line-height: 1.2; margin: 0 0 18px; letter-spacing: 0; }
+    h3 { font-size: 20px; line-height: 1.25; margin: 0 0 10px; letter-spacing: 0; }
+    p { margin: 0 0 12px; }
+    .note {
+      border-left: 4px solid var(--orange);
+      background: #fff6ed;
+      padding: 14px 16px;
+      margin: 18px 0;
+    }
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 14px 34px rgba(31, 51, 72, .08);
+    }
+    .card-body { padding: 18px; }
+    .card img { display: block; width: 100%; height: 230px; object-fit: cover; }
+    .summary {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+      margin-top: -42px;
+      position: relative;
+      z-index: 2;
+    }
+    .summary .card { background: rgba(255,255,255,.96); }
+    .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: #f9fbfb;
+    }
+    .stat strong { display: block; font-size: 24px; line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); }
+    th, td { border-bottom: 1px solid var(--line); padding: 12px; vertical-align: top; text-align: left; }
+    th { background: #eef4f6; font-weight: 700; }
+    tr:last-child td { border-bottom: 0; }
+    .timeline { display: grid; gap: 16px; }
+    .day {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      gap: 18px;
+      padding: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .day-date {
+      color: #fff;
+      background: var(--green);
+      border-radius: 8px;
+      padding: 14px;
+      height: fit-content;
+    }
+    .day-date strong { display: block; font-size: 22px; }
+    .day-date span { font-size: 13px; opacity: .9; }
+    .tagline { color: var(--muted); margin-bottom: 8px; }
+    .time-list { margin: 10px 0 0; padding-left: 18px; }
+    .time-list li { margin: 6px 0; }
+    .warn { color: var(--red); font-weight: 700; }
+    .food-card {
+      min-height: 215px;
+      color: #fff;
+      display: flex;
+      align-items: end;
+      padding: 18px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #7b341e, #d08a2d);
+    }
+    .food-card:nth-child(2) { background: linear-gradient(135deg, #1f638f, #42a09a); }
+    .food-card:nth-child(3) { background: linear-gradient(135deg, #454c37, #b96021); }
+    .food-card:nth-child(4) { background: linear-gradient(135deg, #6e3b59, #c37a8d); }
+    .food-card p { color: rgba(255,255,255,.88); margin: 6px 0 0; }
+    .image-strip { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+    .image-strip img { width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .checklist { columns: 2; padding-left: 20px; }
+    .checklist li { break-inside: avoid; margin: 5px 0; }
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 820px) {
+      .hero { min-height: 68vh; padding: 20px; }
+      .summary, .grid-2, .grid-3, .grid-4, .image-strip { grid-template-columns: 1fr; }
+      .day { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: 1fr; }
+      .checklist { columns: 1; }
+      table { font-size: 14px; }
+      th, td { padding: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">2026年7月19日-7月23日 | 乌鲁木齐往返 | 6人 MPV 混动车自驾</p>
+      <h1>伊犁五日自驾攻略</h1>
+      <p>路线以赛里木湖、夏塔、那拉提、独库公路北段为主线。行程不追求打满所有小点，重点保证6人家庭出行的体力、驾驶安全、住宿稳定和景区体验。</p>
+      <div class="chips">
+        <span class="chip">3个大人</span>
+        <span class="chip">2个13岁男孩</span>
+        <span class="chip">1个18岁男孩</span>
+        <span class="chip">7座及以下 MPV</span>
+        <span class="chip">独库北段需提前确认通行</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary">
+      <div class="card">
+        <div class="card-body">
+          <h2>行程总览</h2>
+          <table>
+            <thead>
+              <tr><th>日期</th><th>路线</th><th>住宿</th><th>强度</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>7月19日</td><td>乌鲁木齐 - 赛里木湖 - 果子沟大桥 - 清水河</td><td>清水河</td><td>长途+湖区</td></tr>
+              <tr><td>7月20日</td><td>清水河 - 伊宁喀赞其 - 天马浴河 - 昭苏</td><td>昭苏</td><td>中等偏满</td></tr>
+              <tr><td>7月21日</td><td>昭苏 - 夏塔 - 特克斯</td><td>特克斯</td><td>徒步日</td></tr>
+              <tr><td>7月22日</td><td>特克斯 - 那拉提</td><td>那拉提</td><td>草原游玩</td></tr>
+              <tr><td>7月23日</td><td>那拉提 - 独库公路北段 - 乌鲁木齐</td><td>返乌市</td><td>最长驾驶日</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h2>执行重点</h2>
+          <div class="stats">
+            <div class="stat"><strong>5天</strong><span>完整环线节奏</span></div>
+            <div class="stat"><strong>4晚</strong><span>清水河、昭苏、特克斯、那拉提</span></div>
+            <div class="stat"><strong>2天</strong><span>长途驾驶日</span></div>
+            <div class="stat"><strong>1条</strong><span>独库北段核心返程线</span></div>
+          </div>
+          <div class="note">
+            7月23日不要上午再深玩那拉提。当天主要任务是安全穿越独库北段并晚上回到乌鲁木齐。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2>原始行程与酒店价格</h2>
+      <div class="image-strip">
+        <img src="assets/route-original.png" alt="伊犁五日游原始路线图">
+        <img src="assets/hotel-table.png" alt="酒店价格参考表">
+      </div>
+    </section>
+
+    <section>
+      <h2>每日详细安排</h2>
+      <div class="timeline">
+        <article class="day">
+          <div class="day-date"><strong>7/19</strong><span>周日 | 住清水河</span></div>
+          <div>
+            <h3>乌鲁木齐 - 赛里木湖 - 果子沟大桥 - 清水河</h3>
+            <p class="tagline">建议07:30前出发。当天路程长，午餐尽量在服务区快速解决，把时间留给赛里木湖。</p>
+            <ul class="time-list">
+              <li>07:00-07:30 乌鲁木齐出发，车上准备早餐、饮用水、零食。</li>
+              <li>12:30-13:30 路上服务区午餐，避免正餐拖太久。</li>
+              <li>14:00-17:30 赛里木湖游玩，选重点湖边、草坡、雪山远景停靠。</li>
+              <li>17:30-18:10 果子沟大桥观景，只在安全停车点停留。</li>
+              <li>19:00左右 到清水河入住，晚餐吃大盘鸡、拌面、椒麻鸡、烤肉。</li>
+            </ul>
+            <p><span class="warn">避坑：</span>果子沟大桥桥面不能停车拍照；赛里木湖风大，孩子不要长时间下水玩。</p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-date"><strong>7/20</strong><span>周一 | 住昭苏</span></div>
+          <div>
+            <h3>清水河 - 伊宁喀赞其 - 天马浴河 - 昭苏</h3>
+            <p class="tagline">这天要兼顾城市民俗和昭苏表演，建议08:30出发，表演场次当天再确认。</p>
+            <ul class="time-list">
+              <li>08:30 清水河出发前往伊宁，约1.5小时。</li>
+              <li>10:00-12:00 喀赞其民俗区，拍照、坐马车、吃冰淇淋和酸奶。</li>
+              <li>12:00-13:00 伊宁午餐，优先抓饭、手抓肉、烤包子。</li>
+              <li>13:00-17:00 前往昭苏，途中控制停车次数。</li>
+              <li>17:30-19:00 天马浴河或湿地公园，按当天官方场次调整。</li>
+              <li>19:30 入住昭苏，晚餐建议羊排揪片子、丸子汤、烤肉。</li>
+            </ul>
+            <p><span class="warn">避坑：</span>不要压点赶表演。若当天赶不上，不建议等到太晚影响第二天夏塔。</p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-date"><strong>7/21</strong><span>周二 | 住特克斯</span></div>
+          <div>
+            <h3>昭苏 - 夏塔 - 特克斯</h3>
+            <p class="tagline">当天核心是夏塔。以轻徒步看雪山草甸为主，不建议为靠近冰川长时间深入。</p>
+            <ul class="time-list">
+              <li>07:30-08:00 昭苏出发去夏塔，约1.5-2小时。</li>
+              <li>09:30-15:30 夏塔游玩，坐区间车后轻徒步，整体停留5-6小时。</li>
+              <li>15:30-18:00 前往特克斯，约2-2.5小时。</li>
+              <li>18:30 入住特克斯，晚上逛八卦城中心街。</li>
+            </ul>
+            <p><span class="warn">避坑：</span>夏塔天气变化快，带冲锋衣、雨衣、徒步鞋。骑马和二段交通先问清价格。</p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-date"><strong>7/22</strong><span>周三 | 住那拉提</span></div>
+          <div>
+            <h3>特克斯 - 那拉提</h3>
+            <p class="tagline">上午离开特克斯，下午进入那拉提。景区很大，建议主打空中草原线。</p>
+            <ul class="time-list">
+              <li>08:00-09:00 特克斯八卦城简单看一圈，不深逛。</li>
+              <li>09:00-13:00 前往那拉提，约3.5-4.5小时。</li>
+              <li>13:00-14:00 那拉提镇午餐、入住或寄存行李。</li>
+              <li>14:30-19:00 那拉提空中草原线，重点看草原、雪山、游牧人家区域。</li>
+              <li>19:30 那拉提镇晚餐，早休息准备第二天返程。</li>
+            </ul>
+            <p><span class="warn">避坑：</span>不要一天硬塞空中草原、河谷草原、盘龙谷道三条线，6人家庭出行会很累。</p>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-date"><strong>7/23</strong><span>周四 | 返乌鲁木齐</span></div>
+          <div>
+            <h3>那拉提 - 独库公路北段 - 乌鲁木齐</h3>
+            <p class="tagline">这是最长驾驶日。必须早出发，提前确认独库预约、天气、施工和临时管制。</p>
+            <ul class="time-list">
+              <li>06:30 早餐、退房、加满油，准备当天饮水和路餐。</li>
+              <li>07:00 那拉提出发，进入独库北段前再次确认通行状态。</li>
+              <li>09:30-10:30 乔尔玛附近短暂停留、补给、洗手间。</li>
+              <li>10:30-13:30 继续往独山子方向，山路谨慎驾驶。</li>
+              <li>13:30-14:30 独山子或沿途午餐。</li>
+              <li>14:30-20:30 返回乌鲁木齐，还车或入住。</li>
+            </ul>
+            <p><span class="warn">避坑：</span>不要下午才从那拉提出发。独库部分入口晚间会限制社会车辆驶入，且山区天气和事故会造成临时管制。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>景区图文</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <img src="assets/sayram-lake.jpg" alt="赛里木湖湖景">
+          <div class="card-body">
+            <h3>赛里木湖</h3>
+            <p>第一天的核心景点。湖面、草坡、雪山同框，适合环湖选择重点停车点拍照。建议停留3小时左右，别为了完整环湖拖到太晚。</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/nalati.jpg" alt="那拉提草原">
+          <div class="card-body">
+            <h3>那拉提草原</h3>
+            <p>第四天主打景点。时间有限时优先空中草原线，体验草原、森林、雪山和牧场层次，不建议同日多线打卡。</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>夏塔</h3>
+            <p>第三天重点。适合看雪山、草甸、河谷，体力消耗比普通景点大。6人家庭建议轻徒步，不追求走到最深处。</p>
+            <p><strong>停留建议：</strong>5-6小时。带雨衣、冲锋衣、徒步鞋、能量棒。</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>独库公路北段</h3>
+            <p>返程核心体验，也是风险最高的一段。美景在路上，但不要在弯道、窄路、落石区停车拍照。当天以安全返乌鲁木齐为第一目标。</p>
+            <p><strong>执行原则：</strong>提前预约、早出发、满油、双司机轮换。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>美食安排</h2>
+      <div class="grid grid-4">
+        <div class="food-card">
+          <div><h3>抓饭 / 手抓肉</h3><p>伊宁、特克斯优先安排，适合午餐正餐。</p></div>
+        </div>
+        <div class="food-card">
+          <div><h3>拌面 / 大盘鸡</h3><p>长途日稳妥选择，出餐快、分量足。</p></div>
+        </div>
+        <div class="food-card">
+          <div><h3>烤肉 / 烤包子</h3><p>晚上少量加餐可以，别影响第二天山路和徒步。</p></div>
+        </div>
+        <div class="food-card">
+          <div><h3>酸奶 / 冰淇淋</h3><p>喀赞其适合轻松体验，注意孩子肠胃。</p></div>
+        </div>
+      </div>
+      <div class="note">
+        新疆菜分量通常较大。6个人点菜建议先少点，不够再加；烤全羊、骑马、旅拍等旺季消费必须先确认价格和包含内容。
+      </div>
+    </section>
+
+    <section>
+      <h2>住宿建议</h2>
+      <table>
+        <thead>
+          <tr><th>日期</th><th>地点</th><th>参考酒店</th><th>订房重点</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>7月19日</td><td>清水河</td><td>清禾客栈或同级</td><td>停车位、晚到保留、热水、空调</td></tr>
+          <tr><td>7月20日</td><td>昭苏</td><td>星程酒店或县城连锁</td><td>县城内更稳，吃饭、补给、加油方便</td></tr>
+          <tr><td>7月21日</td><td>特克斯</td><td>瞻德酒店或同级</td><td>靠近县城中心，晚上吃饭方便</td></tr>
+          <tr><td>7月22日</td><td>那拉提</td><td>红树湾或同级</td><td>离景区入口近，确认停车和热水</td></tr>
+        </tbody>
+      </table>
+      <p class="note">6个人建议订3间双床房，比2间房更利于休息。旺季优先订可取消房，入住前一天电话确认。</p>
+    </section>
+
+    <section>
+      <h2>必带物资</h2>
+      <ul class="checklist">
+        <li>身份证、驾驶证、租车合同、儿童证件照片</li>
+        <li>手机支架、车充、充电线、充电宝</li>
+        <li>冲锋衣、薄羽绒或抓绒、长裤</li>
+        <li>防晒衣、帽子、墨镜、防晒霜、润唇膏</li>
+        <li>徒步鞋、一次性雨衣、小背包</li>
+        <li>晕车药、肠胃药、感冒药、退烧药、创可贴</li>
+        <li>矿泉水、电解质饮料、馕、牛肉干、能量棒</li>
+        <li>湿巾、纸巾、垃圾袋、一次性马桶垫</li>
+        <li>离线地图、景区预约截图、酒店订单截图</li>
+        <li>无人机如要携带，提前确认禁飞和报备规则</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>租车与驾驶避坑</h2>
+      <div class="grid grid-2">
+        <div class="card"><div class="card-body">
+          <h3>租车检查</h3>
+          <p>优先7座及以下 MPV 混动车。提车时拍完整视频，记录车身、轮胎、轮毂、玻璃、内饰、油电量。确认不计免赔、轮胎玻璃、异地救援范围。</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>山路原则</h3>
+          <p>每天出发前检查胎压和续航。独库、伊昭、夏塔周边不激烈驾驶，不在弯道和窄路停车。至少保持半箱油。</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>独库备用方案</h3>
+          <p>若7月23日独库北段临时管制，改走可通行国省道和高速绕返乌鲁木齐。时间会明显增加，当天要接受晚到。</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>孩子体力</h3>
+          <p>两个13岁男孩和18岁男孩都能适应常规游玩，但夏塔、那拉提不要连续高强度徒步。车上备晕车药、能量食品和保暖衣物。</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>出发前最后确认</h2>
+      <table>
+        <thead>
+          <tr><th>事项</th><th>确认时间</th><th>标准</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>独库公路北段预约与通行</td><td>7月22日晚、7月23日早</td><td>看官方通告、天气、施工、限流</td></tr>
+          <tr><td>那拉提门票和区间车</td><td>7月21日或7月22日上午</td><td>确认空中草原线余票和进场时间</td></tr>
+          <tr><td>夏塔天气</td><td>7月20日晚、7月21日早</td><td>雨天降级为轻徒步，不深入</td></tr>
+          <tr><td>酒店订单</td><td>每天上午</td><td>电话确认保留房间、停车、热水</td></tr>
+          <tr><td>车辆状态</td><td>每天出发前</td><td>油电、胎压、导航、饮水、路餐</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>图片来源：Sayram Lake scenery，Fumikas Sagisavas，CC0，Wikimedia Commons；Nalati Grassland 2，Yoshi Canopus，CC0，Wikimedia Commons。路线图和酒店价格图来自用户提供截图。</p>
+    <p>本攻略按2026年7月2日整理。景区票务、道路通行、表演场次、酒店价格可能变化，出发前以官方渠道和商家确认为准。</p>
+  </footer>
+</body>
+</html>
