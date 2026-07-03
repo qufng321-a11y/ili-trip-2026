@@ -163,6 +163,35 @@
     .food-card p { color: rgba(255,255,255,.88); margin: 6px 0 0; }
     .image-strip { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
     .image-strip img { width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .vehicle {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .vehicle-photo {
+      min-height: 360px;
+      background:
+        linear-gradient(180deg, rgba(10, 24, 32, .10), rgba(10, 24, 32, .46)),
+        url("assets/linghui-m9.png") center / cover no-repeat;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .vehicle-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0 0;
+    }
+    .vehicle-fact {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #f9fbfb;
+    }
+    .vehicle-fact strong { display: block; font-size: 18px; }
+    .vehicle-fact span { color: var(--muted); font-size: 13px; }
     .checklist { columns: 2; padding-left: 20px; }
     .checklist li { break-inside: avoid; margin: 5px 0; }
     footer {
@@ -175,10 +204,11 @@
     }
     @media (max-width: 820px) {
       .hero { min-height: 68vh; padding: 20px; }
-      .summary, .grid-2, .grid-3, .grid-4, .image-strip { grid-template-columns: 1fr; }
+      .summary, .grid-2, .grid-3, .grid-4, .image-strip, .vehicle { grid-template-columns: 1fr; }
       .day { grid-template-columns: 1fr; }
       .stats { grid-template-columns: 1fr; }
       .checklist { columns: 1; }
+      .vehicle-facts { grid-template-columns: 1fr; }
       table { font-size: 14px; }
       th, td { padding: 9px; }
     }
@@ -240,6 +270,40 @@
       <div class="image-strip">
         <img src="assets/route-original.png" alt="伊犁五日游原始路线图">
         <img src="assets/hotel-table.png" alt="酒店价格参考表">
+      </div>
+    </section>
+
+    <section>
+      <h2>车辆安排：比亚迪领汇 M9</h2>
+      <div class="vehicle">
+        <div class="vehicle-photo" role="img" aria-label="比亚迪领汇 M9 车辆参考图"></div>
+        <div class="card">
+          <div class="card-body">
+            <h3>7座插混 MPV，适合这次 6 人自驾</h3>
+            <p>你们这次 3 个大人、2 个 13 岁男孩、1 个 18 岁男孩，领汇 M9 的 2+2+3 七座布局比较合适：第二排给长途乘坐舒适度，第三排给孩子或轻装乘客，后备厢用于集中放行李。</p>
+            <div class="vehicle-facts">
+              <div class="vehicle-fact"><strong>5200mm</strong><span>公开车长信息，停车需多预留空间</span></div>
+              <div class="vehicle-fact"><strong>3045mm</strong><span>公开轴距信息，长途乘坐空间更宽裕</span></div>
+              <div class="vehicle-fact"><strong>2+2+3</strong><span>七座布局，6人出行不满载</span></div>
+              <div class="vehicle-fact"><strong>插混</strong><span>山路以保油保电为主，不依赖充电桩</span></div>
+            </div>
+            <p class="note">车辆配置以租车公司实际交付版本为准。提车时重点确认保险、续航显示、胎压、备胎/补胎工具、随车充电线、玻璃水和车身划痕。</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-3" style="margin-top:16px">
+        <article class="card"><div class="card-body">
+          <h3>座位与行李</h3>
+          <p>建议第二排坐两个大人或一大一小，第三排坐两个男孩或一大一小。每人控制 1 个 20-24 寸箱或软包，零食、水、冲锋衣放车内易取位置。</p>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>补能策略</h3>
+          <p>这条线不建议把充电视为刚需。每天早上优先满油出发，清水河、昭苏、特克斯、那拉提县镇补油；山路前不要低油低电进入。</p>
+        </div></article>
+        <article class="card"><div class="card-body">
+          <h3>山区驾驶</h3>
+          <p>独库、夏塔、那拉提周边长下坡多，提前降速，避免频繁急刹。雨天、落石区、弯道和窄路不停车拍照，驾驶员每天至少轮换一次休息。</p>
+        </div></article>
       </div>
     </section>
 
@@ -533,7 +597,7 @@
   </main>
 
   <footer>
-    <p>图片来源：Sayram Lake scenery，Fumikas Sagisavas，CC0，Wikimedia Commons；Nalati Grassland 2，Yoshi Canopus，CC0，Wikimedia Commons；Guozigou Bridge，Cccefalon，CC BY-SA 4.0，Wikimedia Commons；Along the Ili River, Yining，Wikimedia Commons；昭苏县天马博物馆，Wikimedia Commons；新疆-昭苏-夏塔峡谷，Wikimedia Commons；Run Through，Ke Liu，CC BY-SA 3.0，Wikimedia Commons；G217 Duku，Tigerzeng，CC BY-SA 4.0，Wikimedia Commons。路线图和酒店价格图来自用户提供截图。酒店环境图为公开预订平台外链展示，最终以平台实时页面和实际订单为准。</p>
+    <p>图片来源：Sayram Lake scenery，Fumikas Sagisavas，CC0，Wikimedia Commons；Nalati Grassland 2，Yoshi Canopus，CC0，Wikimedia Commons；Guozigou Bridge，Cccefalon，CC BY-SA 4.0，Wikimedia Commons；Along the Ili River, Yining，Wikimedia Commons；昭苏县天马博物馆，Wikimedia Commons；新疆-昭苏-夏塔峡谷，Wikimedia Commons；Run Through，Ke Liu，CC BY-SA 3.0，Wikimedia Commons；G217 Duku，Tigerzeng，CC BY-SA 4.0，Wikimedia Commons。路线图和酒店价格图来自用户提供截图。车辆图片来自太平洋汽车公开图库，已本地化展示；酒店环境图为公开预订平台外链展示，最终以平台实时页面和实际订单为准。</p>
     <p>本攻略按2026年7月2日整理。景区票务、道路通行、表演场次、酒店价格可能变化，出发前以官方渠道和商家确认为准。</p>
   </footer>
 </body>
