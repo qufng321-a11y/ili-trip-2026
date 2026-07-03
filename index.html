@@ -81,6 +81,27 @@
     }
     .card-body { padding: 18px; }
     .card img { display: block; width: 100%; height: 230px; object-fit: cover; }
+    .hotel-photo-card img {
+      height: 205px;
+      background: #e8eef1;
+    }
+    .hotel-meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+    .hotel-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--blue);
+      background: #f7fbfc;
+      font-size: 14px;
+      text-decoration: none;
+    }
     .summary {
       display: grid;
       grid-template-columns: 1.2fr .8fr;
@@ -380,6 +401,53 @@
     </section>
 
     <section>
+      <h2>酒店环境照片</h2>
+      <div class="grid grid-3">
+        <article class="card hotel-photo-card">
+          <img src="https://dimg04.c-ctrip.com/images/1mc6s12000rpumaas0EEE_C_750_340_Q70.jpg" alt="乌鲁木齐丽枫酒店外观参考图">
+          <div class="card-body">
+            <h3>乌鲁木齐 | 丽枫酒店</h3>
+            <p class="hotel-meta">参考门店：高铁站万达广场店。原行程未写具体门店，最终以实际订单为准。</p>
+            <a class="hotel-link" href="https://m.ctrip.com/html5/hotel/hoteldetail/15026186.html" target="_blank" rel="noopener">查看平台实拍</a>
+          </div>
+        </article>
+        <article class="card hotel-photo-card">
+          <img src="https://dimg04.c-ctrip.com/images/0205512000e7xf7rbC856_C_750_340_Q70.jpg" alt="清禾客栈环境图">
+          <div class="card-body">
+            <h3>清水河 | 清禾客栈</h3>
+            <p class="hotel-meta">2024年开业，平台信息显示免费停车、早餐和影音房评价较多。</p>
+            <a class="hotel-link" href="https://m.ctrip.com/html5/hotel/hoteldetail/120199654.html" target="_blank" rel="noopener">查看平台实拍</a>
+          </div>
+        </article>
+        <article class="card hotel-photo-card">
+          <img src="https://dimg04.c-ctrip.com/images/0221f12000nn4w6vp3B96_C_750_340_Q70.jpg" alt="昭苏星程酒店环境图">
+          <div class="card-body">
+            <h3>昭苏 | 星程酒店</h3>
+            <p class="hotel-meta">参考门店：昭苏天马湖公园店。位置在昭苏解放街，适合作为夏塔前一晚补给点。</p>
+            <a class="hotel-link" href="https://m.ctrip.com/html5/hotel/hoteldetail/2312758.html" target="_blank" rel="noopener">查看平台实拍</a>
+          </div>
+        </article>
+        <article class="card hotel-photo-card">
+          <img src="https://dimg04.c-ctrip.com/images/0222w12000mpe62xf2530_C_750_340_Q70.jpg" alt="特克斯瞻德酒店环境图">
+          <div class="card-body">
+            <h3>特克斯 | 瞻德酒店</h3>
+            <p class="hotel-meta">八卦城店，平台信息显示有免费停车场，适合自驾中转。</p>
+            <a class="hotel-link" href="https://m.ctrip.com/html5/hotel/hoteldetail/110127741.html" target="_blank" rel="noopener">查看平台实拍</a>
+          </div>
+        </article>
+        <article class="card hotel-photo-card">
+          <img src="https://dimg04.c-ctrip.com/images/0206q12000syx11sw49C4_C_750_340_Q70.jpg" alt="那拉提红树湾环境图">
+          <div class="card-body">
+            <h3>那拉提 | 红树湾</h3>
+            <p class="hotel-meta">参考门店：红树湾·View mountain·山与远方丨山景美宿，近那拉提客运站。</p>
+            <a class="hotel-link" href="https://m.ctrip.com/html5/hotel/hoteldetail/129944109.html" target="_blank" rel="noopener">查看平台实拍</a>
+          </div>
+        </article>
+      </div>
+      <p class="note">酒店图片来自公开预订平台页面，可能随平台更新变化；订房前仍需按实际门店、日期、房型、停车和取消规则复核。</p>
+    </section>
+
+    <section>
       <h2>必带物资</h2>
       <ul class="checklist">
         <li>身份证、驾驶证、租车合同、儿童证件照片</li>
@@ -435,7 +503,7 @@
   </main>
 
   <footer>
-    <p>图片来源：Sayram Lake scenery，Fumikas Sagisavas，CC0，Wikimedia Commons；Nalati Grassland 2，Yoshi Canopus，CC0，Wikimedia Commons。路线图和酒店价格图来自用户提供截图。</p>
+    <p>图片来源：Sayram Lake scenery，Fumikas Sagisavas，CC0，Wikimedia Commons；Nalati Grassland 2，Yoshi Canopus，CC0，Wikimedia Commons。路线图和酒店价格图来自用户提供截图。酒店环境图为公开预订平台外链展示，最终以平台实时页面和实际订单为准。</p>
     <p>本攻略按2026年7月2日整理。景区票务、道路通行、表演场次、酒店价格可能变化，出发前以官方渠道和商家确认为准。</p>
   </footer>
 </body>
